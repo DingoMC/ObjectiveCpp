@@ -7,7 +7,7 @@ Person::Person(string name1, string surname1, int age1) {
     age = age1;
     cout<<"Konstruktor klasy bazowej - Person"<<endl;
 }
-Person::Person() {cout<<"Konstruktor bez. klasy bazowej – Person"<<endl;}
+Person::Person() {cout<<"Konstruktor bez. klasy bazowej - Person"<<endl;}
 void Person::setAge(int age1) {age = age1;}
 string Person::getSurname() {return surname;}
 bool Person::is_18() {return age >= 18;}

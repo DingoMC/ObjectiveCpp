@@ -13,7 +13,7 @@ class Student : public Person {
         }
         string getIndex() {return index;}
         void showInfoStudent () {
-
+            cout<<index<<" "<<endl;
         }
 };
 

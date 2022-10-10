@@ -40,6 +40,9 @@ int main() {
     for(int i=0;i<3;i++) delete p4[i];
     delete [] p4;
     Student s("1111","xddd", "ssss", 21);
+
     s.showInfoPerson();
+    cin.ignore();
+    cin.get();
     return 0;
 }
