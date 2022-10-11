@@ -5,15 +5,18 @@ class Student : public Person {
     private:
         string index;
     public:
-        Student (string index1, string name1, string surname1, int age1) : Person(name1, surname1, age1) {
-            index1 = index;
+        Student () {
+
         }
-        void setIndex(string newIndex) {
+        Student (const string &name1, const string &surname1, int age1) : Person(name1, surname1, age1) {
+            cout<<"Konstruktor klasy Student"<<endl;
+        }
+        void setIndex(const string &newIndex) {
             index = newIndex;
         }
         string getIndex() {return index;}
         void showInfoStudent () {
-            cout<<index<<" "<<endl;
+            cout<<getName()<<" "<<getSurname()<<" - "<<index<<endl;
         }
 };
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "person.h"
 #include "teacher.h"
 #include "student.h"
@@ -39,9 +40,35 @@ int main() {
     for(int i=0;i<3;i++) delete p3[i];
     for(int i=0;i<3;i++) delete p4[i];
     delete [] p4;
-    Student s("1111","xddd", "ssss", 21);
-
-    s.showInfoPerson();
+    Student SS[3];
+    Student *DS;
+    Student *SD[3];
+    Student **DD;
+    for (int i = 0; i < 3; i++) {
+        SS->init("Anna", "Wanna", 18+i);
+        SS->setIndex("1234" + to_string(i));
+        SS->showInfoStudent();
+    }
+    DS = new Student[3];
+    for (int i = 0; i < 3; i++) {
+        DS->init("Katarzyna", "Zeszczecina", 19+i);
+        DS->setIndex("2345" + to_string(i));
+        DS->showInfoStudent();
+    }
+    for (int i = 0; i < 3; i++) {
+        SD[i] = new Student("Czarek", "Jarek", 20+i);
+        SD[i]->setIndex("3456" + to_string(i));
+        SD[i]->showInfoStudent();
+    }
+    DD = new Student* [3];
+    for (int i = 0; i < 3; i++) {
+        DD[i] = new Student("Maciej", "Obiektowy", 21+i);
+        DD[i]->setIndex("4567" + to_string(i));
+        DD[i]->showInfoStudent();
+    }
+    for(int i = 0; i < 3; i++) delete SD[i];
+    for(int i = 0; i < 3; i++) delete DD[i];
+    delete [] DD;
     cin.ignore();
     cin.get();
     return 0;

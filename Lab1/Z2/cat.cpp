@@ -1,5 +1,8 @@
 #include <iostream>
 #include "cat.h"
+Cat::Cat () {
+
+}
 void Cat::initMice (const int *m) {
     for (int i = 0; i < 5; i++) this->mice[i] = m[i];
 }

@@ -6,9 +6,9 @@ class Teacher : public Person {
         int experience;
         string title;
     public:
-        Teacher(string name1, string surname1, int age1,int experience1, string title1);
+        Teacher(const string&, const string&, int age1,int experience1, const string&);
         Teacher();
-        void setTitle(string title1);
+        void setTitle(const string &title1);
         int getExperience();
         bool is_Phd();
         void showInfoTeacher();
