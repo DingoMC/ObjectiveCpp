@@ -3,7 +3,7 @@
 using namespace std;
 template <typename T>
 T arrayMin (const T* arr, unsigned arr_size) {
-    unsigned min = arr[0];
+    T min = arr[0];
     for (unsigned i = 1; i < arr_size; i++) {
         if (arr[i] < min) min = arr[i];
     }
