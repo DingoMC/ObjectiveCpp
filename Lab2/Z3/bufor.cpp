@@ -17,6 +17,6 @@ void Bufor::add (int value) {
 }
 void Bufor::show () {
     cout<<"[ ";
-    for (unsigned i = 0; i < s; i++) cout<<tab[i]<<" ";
+    for (int i = 0; i < iterFirstFree; i++) cout<<tab[i]<<" ";
     cout<<"]"<<endl;
 }

@@ -18,7 +18,8 @@ class MaxBufor : public Bufor {
                 cout<<"Error while parsing into buffer: No more space available!"<<endl;
                 return;
             }
-            setFirst(getIndex()+1);
+            setTab(getIndex(), value);
+            setFirst(getIndex() + 1);
         }
 };
 #endif // !MAXBUFOR_H
