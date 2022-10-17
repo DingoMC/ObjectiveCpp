@@ -14,7 +14,7 @@ class Bufor {
         unsigned getIndex () { return iterFirstFree; }
         unsigned getSize () { return s; }
         int getTab (unsigned i) { return tab[i]; }
-        int getFirst () { return tab[iterFirstFree - 1]; }
+        int getFirst () { return tab[0]; }
         void setFirst (int value) { iterFirstFree = value; }
         void setTab (unsigned iter_at, int value) { tab[iter_at] = value; }
         void show ();

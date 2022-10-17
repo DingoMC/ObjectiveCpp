@@ -5,11 +5,21 @@
 #pragma GCC optimize("O2")
 using namespace std;
 int main () {
-    MaxBufor b(10);
-    MeanBufor b2(10);
-    b.add(7);
-    b.add(15);
-    b.show();
+    Bufor* b = new MaxBufor(10);
+    Bufor* b2 = new MeanBufor(10);
+    b->add(5);
+    b->add(7);
+    cout<<"Max bufor: "<<b->calculate()<<endl;
+    b2->add(9);
+    b2->add(3);
+    b2->add(5);
+    b2->show();
+    cout<<"Mean bufor: "<<b2->calculate()<<endl;
+    Bufor *b3 = new MaxBufor(2);
+    b3->add(5);
+    b3->add(8);
+    b3->add(14); // Error
+    b3->show();
     cin.ignore();
     cin.get();
     return 0;
