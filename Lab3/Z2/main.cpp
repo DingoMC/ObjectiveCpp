@@ -12,6 +12,8 @@ T arrayMin (const T* arr, unsigned arr_size) {
 int main () {
     int arr[5] = {3, 2, 5, 1, 7};
     cout<<arrayMin(arr, 5)<<endl;
+    double arr2[4] = {5.3, 2.4, 0.5, 1.6};
+    cout<<arrayMin(arr2, 4)<<endl;
     cin.ignore();
     cin.get();
     return 0;

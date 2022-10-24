@@ -13,7 +13,7 @@ int digitSum (int n) {
 }
 int digits (int n) {
     int d = 1;
-    while (n > 10) {
+    while (n >= 10) {
         d++;
         n /= 10;
     }
