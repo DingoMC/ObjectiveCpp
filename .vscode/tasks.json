@@ -6,12 +6,13 @@
 			"label": "C/C++: g++.exe kompiluj aktywny plik",
 			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
 			"args": [
+				"-std=c++17",
+				"-static-libstdc++",
 				"-fdiagnostics-color=always",
 				"-g",
 				"${fileDirname}\\**.cpp",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"-std=c++17"
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
