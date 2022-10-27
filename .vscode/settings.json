@@ -46,6 +46,9 @@
         "*.tpp": "cpp",
         "vector": "cpp",
         "list": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "set": "cpp",
+        "xtree": "cpp",
+        "array": "cpp"
     }
 }
