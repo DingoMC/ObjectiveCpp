@@ -11,6 +11,8 @@
 				"-fdiagnostics-color=always",
 				"-g",
 				"${fileDirname}\\**.cpp",
+				"-I",
+				"C:\\boost_1_80_0",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
