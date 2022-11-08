@@ -49,6 +49,9 @@
         "algorithm": "cpp",
         "set": "cpp",
         "xtree": "cpp",
-        "array": "cpp"
+        "array": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "*.ipp": "cpp"
     }
 }
