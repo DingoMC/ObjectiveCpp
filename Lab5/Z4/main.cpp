@@ -8,6 +8,10 @@ int main () {
     dict.add("Kot", "Cat");
     dict.add("dcba", "abcd");
     dict.add("edcba", "abcde");
+    dict.add("zebra", "zebra");
+    dict.add("szalik", "scarf");
+    dict.add("zabrac", "zebrane");
+    dict.add("pokoj", "zimmer");
     dict.show();
     dict.getTranslation("kot");
     dict.getTranslation("mysz");    // Blad - brak slowa w slowniku
