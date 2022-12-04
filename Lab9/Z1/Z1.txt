@@ -1,0 +1,33 @@
+// Program z lab 07
+#include <iostream>
+using namespace std;
+// Funkcja glowna
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+    // Inicjalizacja QVector
+    QVector<Car> katalog;
+    srand(time(NULL));
+    katalog.append(Car("Opel", "Astra", getRandomVIN(), 2002)); // Dodawanie do katalogu
+    show(katalog);
+    cout<<CountOlderThan(katalog, 2005)<<endl;
+    DeleteByVIN(katalog, "0AGSHS726SD123456");
+    sort(katalog.begin(), katalog.end(), CompareYear());
+    show(katalog);
+    cout<<endl;
+    sort(katalog.begin(), katalog.end(), CompareBrand());
+    show(katalog);
+    // Zadanie 2
+    cout<<isPangram("The quick brown fox jumps over the lazy dog")<<endl;
+    // Zadanie 3
+    QMap<string, int> kraje;
+    kraje.insert("Indie", 1411415000);
+    showCountries(kraje);
+    showCountryNames(kraje);
+    showCountriesRange(kraje, 100000000, 300000000);
+    kraje.remove("Indie");
+    cout<<endl;
+    showCountriesByInhabitants(kraje);
+    return a.exec();
+}
+// Koniec Programu

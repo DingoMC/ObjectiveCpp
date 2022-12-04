@@ -61,6 +61,8 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "xhash": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "iomanip": "cpp",
+        "random": "cpp"
     }
 }
