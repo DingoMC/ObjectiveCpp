@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
     showCountryNames(kraje);
     showCountriesRange(kraje, 100000000, 300000000);
     kraje.remove("Indie");
+    int c = 7 / 2;
     cout<<endl;
     showCountriesByInhabitants(kraje);
     return a.exec();
