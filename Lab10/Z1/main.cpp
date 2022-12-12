@@ -9,7 +9,7 @@ int main () {
     cout<<floatFound("-3.37745")<<endl;
     cout<<floatFound("+0.444")<<endl;
     cout<<floatFound("-1.7")<<endl;
-    cout<<floatFound("+177.254")<<endl;
+    cout<<floatFound("+u77.254")<<endl;
     cout<<floatFound("-19.254")<<endl;
     cin.ignore();
     cin.get();

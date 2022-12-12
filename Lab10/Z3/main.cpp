@@ -19,7 +19,7 @@ int main () {
     cout<<isPostalCode("20-604")<<endl;
     cout<<isPostalCode("59604")<<endl;
     cout<<isHouseNo("78")<<endl;
-    cout<<isHouseNo("203A")<<endl;
+    cout<<isHouseNo("A")<<endl;
     cout<<isFlatNo("13")<<endl;
     cout<<isFlatNo("2")<<endl;
     cin.ignore();
