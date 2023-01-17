@@ -4,7 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/boost_1_80_0/**"
+                "C:/boost_1_80_0/**",
+                "C:/googletest/googlemock/include/**",
+                "C:/googletest/googletest/include/**"
             ],
             "defines": [
                 "_DEBUG",

@@ -13,6 +13,8 @@
 				"${fileDirname}\\**.cpp",
 				"-I",
 				"C:\\boost_1_80_0",
+				"C:\\googletest\\googletest\\include",
+				"C:\\googletest\\googlemock\\include",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
